@@ -3,13 +3,25 @@ package com.foodordering;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
+import java.io.Serializable;
+import java.util.Date;
 import org.hibernate.validator.constraints.CreditCardNumber;
 import java.util.List;
 import java.util.ArrayList;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 @Data
-public class TacoOrder {
+@Table
+public class TacoOrder implements Serializable {
+
+    private final long serialVersionUID = 1L;
+
+    @Id
+    private Long id;
+
+    private Date placedAt;
 
     @NotBlank(message="Delivery name is required")
     private String deliveryName;
