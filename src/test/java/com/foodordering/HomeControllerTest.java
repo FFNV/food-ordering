@@ -17,11 +17,11 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest   // <1>
+@WebMvcTest
 public class HomeControllerTest {
 
     @Autowired
-    private MockMvc mockMvc;   // <2>
+    private MockMvc mockMvc;
 
     @MockBean
     private IngredientRepository ingredientRepository;
