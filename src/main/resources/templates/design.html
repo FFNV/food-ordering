@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
   <head>
-    <title>Taco Cloud</title>
+    <title>Product Cloud</title>
     <link rel="stylesheet" th:href="@{/styles.css}" />
   </head>
 
@@ -15,52 +15,52 @@
       <input type="submit" value="Logout"/>
     </form>
 
-    <form th:method="POST" th:object="${taco}" th:action="@{/design}" id="tacoForm">
+    <form th:method="POST" th:object="${product}" th:action="@{/design}" id="tacoForm">
 
     <span class="validationError"
           th:if="${#fields.hasErrors('ingredients')}"
           th:errors="*{ingredients}">Ingredient Error</span>
 
     <div class="grid">
-      <div class="ingredient-group" id="wraps">
-      <h3>Designate your wrap:</h3>
-      <div th:each="ingredient : ${wrap}">
+      <div class="ingredient-group" id="pack">
+      <h3>Choose your pack:</h3>
+      <div th:each="ingredient : ${pack}">
         <input th:field="*{ingredients}" type="checkbox"
                th:value="${ingredient.id}"/>
         <span th:text="${ingredient.name}">INGREDIENT</span><br/>
       </div>
       </div>
 
-	  <div class="ingredient-group" id="proteins">
-      <h3>Pick your protein:</h3>
-      <div th:each="ingredient : ${protein}">
+	  <div class="ingredient-group" id="mj">
+      <h3>Pick your Mary Jane:</h3>
+      <div th:each="ingredient : ${mj}">
         <input th:field="*{ingredients}" type="checkbox"
                th:value="${ingredient.id}"/>
         <span th:text="${ingredient.name}">INGREDIENT</span><br/>
       </div>
       </div>
 
-	  <div class="ingredient-group" id="cheeses">
-      <h3>Choose your cheese:</h3>
-      <div th:each="ingredient : ${cheese}">
+	  <div class="ingredient-group" id="syrup">
+      <h3>Choose your syrup:</h3>
+      <div th:each="ingredient : ${syrup}">
         <input th:field="*{ingredients}" type="checkbox"
                th:value="${ingredient.id}"/>
         <span th:text="${ingredient.name}">INGREDIENT</span><br/>
       </div>
       </div>
 
-	  <div class="ingredient-group" id="veggies">
-      <h3>Determine your veggies:</h3>
-      <div th:each="ingredient : ${veggies}">
+	  <div class="ingredient-group" id="molly">
+      <h3>Determine your molly:</h3>
+      <div th:each="ingredient : ${molly}">
         <input th:field="*{ingredients}" type="checkbox"
                th:value="${ingredient.id}"/>
         <span th:text="${ingredient.name}">INGREDIENT</span><br/>
       </div>
       </div>
 
-	  <div class="ingredient-group" id="sauces">
-      <h3>Select your sauce:</h3>
-      <div th:each="ingredient : ${sauce}">
+	  <div class="ingredient-group" id="perk">
+      <h3>Select your perk:</h3>
+      <div th:each="ingredient : ${perk}">
         <input th:field="*{ingredients}" type="checkbox"
                th:value="${ingredient.id}"/>
         <span th:text="${ingredient.name}">INGREDIENT</span><br/>

@@ -5,7 +5,7 @@ spring:
       password: infinity
   datasource:
     generate-unique-name: false
-    name: tacocloud
+    name: productcloud
 
 taco:
   orders:
@@ -16,16 +16,15 @@ taco:
     codes:
       abcdef: 10
 
-
 ---
 spring:
   profiles: prod
 
   datasource:
-    url: jdbc:mysql://localhost/tacocloud
-    username: tacouser
-    password: tacopassword
+    url: jdbc:mysql://localhost/productcloud
+    username: productuser
+    password: productpassword
 
 logging:
   level:
-    tacos: WARN
+    products: WARN
