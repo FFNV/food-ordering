@@ -103,7 +103,7 @@ public class DesignProductControllerTest {
 
   @Test
   @WithMockUser(username="testuser", password="testpass", authorities="ROLE_USER")
-  public void processTaco() throws Exception {
+  public void processProduct() throws Exception {
     when(designRepository.save(design))
         .thenReturn(design);
 

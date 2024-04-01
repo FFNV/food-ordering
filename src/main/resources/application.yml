@@ -7,10 +7,9 @@ spring:
     generate-unique-name: false
     name: productcloud
 
-taco:
+product:
   orders:
     pageSize: 10
-
 
   discount:
     codes:

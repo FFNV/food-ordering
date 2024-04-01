@@ -83,7 +83,7 @@ public class DesignProductController {
   }
 
   @PostMapping
-  public String processTaco(
+  public String processProduct(
       @Valid Product product, Errors errors,
       @ModelAttribute ProductOrder order) {
 

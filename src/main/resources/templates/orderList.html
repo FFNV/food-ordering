@@ -17,7 +17,7 @@
         <ul>
           <li th:each="product : ${order.products}">
             <span th:text="${product.name}"></span> :
-            <span th:each="ingredient : ${taco.ingredients}">
+            <span th:each="ingredient : ${product.ingredients}">
               <span th:text="${ingredient.name}">INGREDIENT</span>,
             </span>
           </li>

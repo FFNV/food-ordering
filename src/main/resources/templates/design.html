@@ -15,7 +15,7 @@
       <input type="submit" value="Logout"/>
     </form>
 
-    <form th:method="POST" th:object="${product}" th:action="@{/design}" id="tacoForm">
+    <form th:method="POST" th:object="${product}" th:action="@{/design}" id="productForm">
 
     <span class="validationError"
           th:if="${#fields.hasErrors('ingredients')}"
