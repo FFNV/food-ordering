@@ -18,3 +18,5 @@
 ```shell
  docker run -p8080:8080 ffnv/productcloud:0.0.6-SNAPSHOT 
 ```          
+
+Далее нужно перейти по ссылке: http://localhost:8080/

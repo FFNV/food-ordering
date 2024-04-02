@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-deploy
+  labels:
+    app: product-cloud
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: product-cloud
+  template:
+    metadata:
+      labels:
+        app: product-cloud
+    spec:
+      containers:
+        - name: product-cloud-container
+          image: ffnv/productcloud:0.0.6-SNAPSHOT
