@@ -16,5 +16,5 @@
 
 Для запуска проекта используй команду:
 ```shell
-docker run -p8080:8080 ffnv/productcloud:0.0.6-SNAPSHOT 
+ docker run -p8080:8080 ffnv/productcloud:0.0.6-SNAPSHOT 
 ```          
