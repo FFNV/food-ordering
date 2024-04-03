@@ -1,4 +1,4 @@
-package products.web;
+package products.model;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 

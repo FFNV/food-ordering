@@ -1,4 +1,4 @@
-package products;
+package products.model;
 import java.util.Arrays;
 import java.util.Collection;
 import javax.persistence.Entity;

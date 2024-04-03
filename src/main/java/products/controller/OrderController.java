@@ -1,4 +1,4 @@
-package products.web;
+package products.controller;
 import javax.validation.Valid;
 
 import org.springframework.data.domain.PageRequest;
@@ -14,9 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
-import products.ProductOrder;
-import products.User;
-import products.data.OrderRepository;
+import products.model.OrderProps;
+import products.model.ProductOrder;
+import products.model.User;
+import products.repository.OrderRepository;
 
 @Controller
 @RequestMapping("/orders")

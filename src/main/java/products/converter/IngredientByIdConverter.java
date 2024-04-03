@@ -1,11 +1,11 @@
-package products.web;
+package products.converter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-import products.Ingredient;
-import products.data.IngredientRepository;
+import products.model.Ingredient;
+import products.repository.IngredientRepository;
 
 @Component
 public class IngredientByIdConverter implements Converter<String, Ingredient> {

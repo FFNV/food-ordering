@@ -1,4 +1,4 @@
-package products;
+package products.model;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
@@ -61,7 +61,7 @@ public class ProductOrder implements Serializable {
   @Digits(integer=3, fraction=0, message="Неверный CVV")
   private String ccCVV;
 
-  @ManyToMany(targetEntity=Product.class)
+  @ManyToMany(targetEntity= Product.class)
   private List<Product> product = new ArrayList<>();
 
   public void addProduct(Product design) {

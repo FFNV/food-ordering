@@ -1,7 +1,7 @@
-package products.security;
+package products.model;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import lombok.Data;
-import products.User;
+import products.model.User;
 
 @Data
 public class RegistrationForm {

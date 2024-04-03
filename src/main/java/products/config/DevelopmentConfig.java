@@ -1,4 +1,4 @@
-package products;
+package products.config;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -6,9 +6,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import products.Ingredient.Type;
-import products.data.IngredientRepository;
-import products.data.UserRepository;
+import products.model.Ingredient;
+import products.model.Ingredient.Type;
+import products.repository.IngredientRepository;
+import products.repository.UserRepository;
+import products.model.User;
 
 @Profile("!prod")
 @Configuration

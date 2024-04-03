@@ -1,12 +1,12 @@
-package products.data;
+package products.repository;
 
 import java.util.List;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
 
-import products.ProductOrder;
-import products.User;
+import products.model.ProductOrder;
+import products.model.User;
 
 public interface OrderRepository
          extends CrudRepository<ProductOrder, Long> {

@@ -23,12 +23,15 @@ import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
-import products.Ingredient.Type;
-import products.data.IngredientRepository;
-import products.data.OrderRepository;
-import products.data.ProductRepository;
-import products.data.UserRepository;
-import products.web.DesignProductController;
+import products.model.Ingredient;
+import products.model.Ingredient.Type;
+import products.repository.IngredientRepository;
+import products.repository.OrderRepository;
+import products.repository.ProductRepository;
+import products.repository.UserRepository;
+import products.model.Product;
+import products.model.User;
+import products.controller.DesignProductController;
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(DesignProductController.class)

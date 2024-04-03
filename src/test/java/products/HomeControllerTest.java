@@ -15,11 +15,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
-import products.data.IngredientRepository;
-import products.data.OrderRepository;
-import products.data.ProductRepository;
-import products.data.UserRepository;
-import products.web.OrderProps;
+import products.repository.IngredientRepository;
+import products.repository.OrderRepository;
+import products.repository.ProductRepository;
+import products.repository.UserRepository;
+import products.model.DiscountCodeProps;
+import products.model.OrderProps;
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest // (secure=false)

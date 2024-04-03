@@ -9,9 +9,10 @@ import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import products.Ingredient;
-import products.Ingredient.Type;
-import products.data.IngredientRepository;
+import products.model.Ingredient;
+import products.model.Ingredient.Type;
+import products.converter.IngredientByIdConverter;
+import products.repository.IngredientRepository;
 
 public class IngredientByIdConverterTest {
 

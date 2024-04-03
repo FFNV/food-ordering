@@ -1,4 +1,4 @@
-package products.web;
+package products.controller;
 
 import java.security.Principal;
 import java.util.ArrayList;
@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import products.Ingredient;
-import products.Ingredient.Type;
-import products.Product;
-import products.ProductOrder;
-import products.User;
-import products.data.IngredientRepository;
-import products.data.ProductRepository;
-import products.data.UserRepository;
+import products.model.Ingredient;
+import products.model.Ingredient.Type;
+import products.model.Product;
+import products.model.ProductOrder;
+import products.model.User;
+import products.repository.IngredientRepository;
+import products.repository.ProductRepository;
+import products.repository.UserRepository;
 
 @Controller
 @RequestMapping("/design")
