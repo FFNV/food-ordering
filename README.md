@@ -14,9 +14,15 @@
 
 Скидки и промокоды: Система поддерживает использование скидочных кодов для получения скидок на заказы.
 
-Для запуска проекта используй команду:
+Для запуска проекта необходимо:
+- Скачать и открыть docker:
+    - Windows: https://docs.docker.com/desktop/install/windows-install/
+    - MacOs: https://docs.docker.com/desktop/install/mac-install/
+    - Linux: https://docs.docker.com/desktop/install/linux-install/
+
+- Ввести в терминале команду
 ```shell
  docker run -p8080:8080 ffnv/productcloud:0.0.6-SNAPSHOT 
 ```          
 
-Далее нужно перейти по ссылке: http://localhost:8080/
+- Перейти по ссылке: http://localhost:8080/
