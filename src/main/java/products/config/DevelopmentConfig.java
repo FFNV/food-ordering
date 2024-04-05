@@ -27,7 +27,7 @@ public class DevelopmentConfig {
 
         repo.save(new Ingredient("ZPLK", "Ziplock", Type.PACK));
         repo.save(new Ingredient("DBLC", "Double cup", Type.PACK));
-        repo.save(new Ingredient("GRBF", "Афганка", Type.MJ));
+        repo.save(new Ingredient("AFGA", "Афганка", Type.MJ));
         repo.save(new Ingredient("GOGL", "Gorilla Glue", Type.MJ));
         repo.save(new Ingredient("LEAN", "Lean", Type.SYRUP));
         repo.save(new Ingredient("PPDR", "Purlple Drank", Type.SYRUP));

@@ -35,8 +35,7 @@ public class OrderController {
   }
 
   @GetMapping("/current")
-  public String orderForm(@AuthenticationPrincipal User user,
-      @ModelAttribute ProductOrder order) {
+  public String orderForm(@AuthenticationPrincipal User user, @ModelAttribute ProductOrder order) {
     if (order.getDeliveryName() == null) {
       order.setDeliveryName(user.getFullname());
     }
@@ -52,7 +51,6 @@ public class OrderController {
     if (order.getDeliveryZip() == null) {
       order.setDeliveryZip(user.getZip());
     }
-
     return "orderForm";
   }
 

@@ -61,7 +61,7 @@ public class DesignProductControllerTest {
     ingredients = Arrays.asList(
     new Ingredient("ZPLK", "Ziplock", Type.PACK),
     new Ingredient("DBLC", "Double cup", Type.PACK),
-    new Ingredient("GRBF", "Афганка", Type.MJ),
+    new Ingredient("AFGA", "Афганка", Type.MJ),
     new Ingredient("GOGL", "Gorilla Glue", Type.MJ),
     new Ingredient("LEAN", "Lean", Type.SYRUP),
     new Ingredient("PPDR", "Purlple Drank", Type.SYRUP),
@@ -75,7 +75,7 @@ public class DesignProductControllerTest {
         .thenReturn(ingredients);
 
     when(ingredientRepository.findById("ZPLK")).thenReturn(Optional.of(new Ingredient("ZPLK", "Ziplock", Type.PACK)));
-    when(ingredientRepository.findById("GRBF")).thenReturn(Optional.of(new Ingredient("GRBF", "Афганка", Type.MJ)));
+    when(ingredientRepository.findById("AFGA")).thenReturn(Optional.of(new Ingredient("AFGA", "Афганка", Type.MJ)));
     when(ingredientRepository.findById("PPDR")).thenReturn(Optional.of(new Ingredient("PPDR", "Purlple Drank", Type.SYRUP)));
 
     design = new Product();
@@ -83,7 +83,7 @@ public class DesignProductControllerTest {
 
     design.setIngredients(Arrays.asList(
         new Ingredient("ZPLK", "Ziplock", Type.PACK),
-        new Ingredient("GRBF", "Афганка", Type.MJ),
+        new Ingredient("AFGA", "Афганка", Type.MJ),
         new Ingredient("PPDR", "Purlple Drank", Type.SYRUP)
     	));
 
@@ -114,7 +114,7 @@ public class DesignProductControllerTest {
 	.thenReturn(new User("testuser", "testpass", "Test User", "123 Street", "Someville", "CO", "12345", "123-123-1234"));
 
     mockMvc.perform(post("/design").with(csrf())
-        .content("name=Test+Product&ingredients=ZPLK,GRBF,PPDR")
+        .content("name=Test+Product&ingredients=ZPLK,AFGA,PPDR")
         .contentType(MediaType.APPLICATION_FORM_URLENCODED))
         .andExpect(status().is3xxRedirection())
         .andExpect(header().stringValues("Location", "/orders/current"));

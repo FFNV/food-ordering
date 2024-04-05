@@ -1,4 +1,4 @@
-Описание приложения "Product Cloud"
+### Описание приложения "Product Cloud"
 
 "Product Cloud" - это веб-приложение для управления продуктами и заказами. Оно разработано для упрощения процесса заказа продуктов для клиентов и управления этими заказами внутри системы.
 
@@ -14,7 +14,25 @@
 
 Скидки и промокоды: Система поддерживает использование скидочных кодов для получения скидок на заказы.
 
-Для запуска проекта необходимо:
+### Project info
+
+- Java version 11
+- Maven version 2.5.3
+- Spring Boot version 2.5.3
+
+### Build Project
+
+./mvnw package
+
+### Run Project
+
+./mvnw spring-boot:run
+
+### Run Tests
+
+./mvnw test
+
+### Для запуска проекта необходимо:
 - Скачать и открыть docker:
     - Windows: https://docs.docker.com/desktop/install/windows-install/
     - MacOs: https://docs.docker.com/desktop/install/mac-install/

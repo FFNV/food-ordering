@@ -1,4 +1,4 @@
-package products.web;
+package products;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
